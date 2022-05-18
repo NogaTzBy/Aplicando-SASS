@@ -1,5 +1,18 @@
 $gradient: 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5);
 
+$negro: #000;
+$blanco: #fff;
+$gris: rgb(100,100,100);
+
+// MAPS, PUESTO PARA LA ACTIVIDAD SASS II Y SEO
+
+$general: (
+    'morado': #9D5DC3,
+    'negro': #000,
+    'blanco': #fff,
+    'gris': rgb(100,100,100)
+);
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -23,7 +36,8 @@ header{
         margin: 0;
         padding: 25px 30px;
         font-weight: bold;
-        color: #9D5DC3;
+        // MAPS, PUESTO PARA LA ACTIVIDAD SASS II Y SEO
+        color: map-get($map: $general, $key: 'morado');
         font-size: 1.6em;
     }
 
@@ -44,7 +58,8 @@ header{
         padding: 5px 12px;
         text-decoration: none;
         font-weight: bold;
-        color: #000;
+        // MAPS, PUESTO PARA LA ACTIVIDAD SASS II Y SEO
+        color: map-get($map: $general, $key: 'negro');
     }
 
     a:hover {
@@ -65,7 +80,7 @@ header{
     background-position: center center;
 
     h1 {
-        color: white;
+        color: map-get($map: $general, $key: 'blanco');
     }
 
     button{
@@ -82,7 +97,8 @@ header{
 
 #caracteristicas{
     background-color: rgb(30,30,30);
-    color: white;
+    // MAPS, PUESTO PARA LA ACTIVIDAD SASS II Y SEO
+    color: map-get($map: $general, $key: 'blanco');
     text-align: center;
 
     .container {
@@ -97,15 +113,19 @@ header{
         p {
             display: none;
         }
-
+        // MAPS, PUESTO PARA LA ACTIVIDAD SASS II Y SEO
         .carta {
-            background-position: center center;
-            background-size: cover;
-            padding: 45px;
+            @extend .extend;
             margin: 20px;
             border-radius: 15px;
         }
     }
+
+.extend {
+    background-position: center center;
+    background-size: cover;
+    padding: 45px;
+}
 
 .carta:first-child{
     background-image: linear-gradient($gradient)
@@ -128,7 +148,7 @@ header{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    color: #000;
+    color: map-get($map: $general, $key: 'negro');
     height: 80vh;
 
     h2 {font-size: 9vw;}
@@ -141,7 +161,8 @@ footer {
 
     p {
         margin: 0;
-        color: rgb(100,100,100);
+        // MAPS, PUESTO PARA LA ACTIVIDAD SASS II Y SEO
+        color: map-get($map: $general, $key: 'gris');
         padding: 12px;
     }
 

@@ -104,7 +104,7 @@ header a:hover {
   background-position: center center;
 }
 #hero h1 {
-  color: white;
+  color: #fff;
 }
 #hero button {
   font-size: 1.75em;
@@ -117,7 +117,7 @@ header a:hover {
 
 #caracteristicas {
   background-color: rgb(30, 30, 30);
-  color: white;
+  color: #fff;
   text-align: center;
 }
 #caracteristicas .container {
@@ -131,11 +131,14 @@ header a:hover {
   display: none;
 }
 #caracteristicas .carta {
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.extend, #caracteristicas .carta {
   background-position: center center;
   background-size: cover;
   padding: 45px;
-  margin: 20px;
-  border-radius: 15px;
 }
 
 .carta:first-child {

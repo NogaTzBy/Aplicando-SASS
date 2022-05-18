@@ -1,0 +1,20 @@
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient($gradient),url("media/fondo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+        color: map-get($map: $general, $key: 'blanco');
+    }
+
+    button{
+        font-size: 1.75em;
+    }
+}

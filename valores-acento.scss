@@ -4,18 +4,17 @@ h3{font-size: 2em;}
 h4{font-size: 1.7em;}
 p{font-size: 1.3em;}
 
-button{
+button {
     font-size: 1.3em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
+    border: 1px solid $gradient;
+    box-shadow: 2px 2px 10px $gradient;
+    color: #fff;
     background-color: #9D5DC3;
     transition: all 0.7s;
     margin-top: 35px;
-    
 }
 
 button:hover {

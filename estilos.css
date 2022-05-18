@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -10,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -38,21 +37,17 @@ button {
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  color: white;
+  border: 1px solid 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5);
+  color: #fff;
   background-color: #9D5DC3;
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   margin-top: 35px;
 }
 
 button:hover {
   background-color: #774792;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all 0.7s;
+  transform: scale(1.05);
   transition: all 0.7s;
 }
 
@@ -66,9 +61,8 @@ button:hover {
 }
 
 header {
-  background-color: whitesmoke;
+  background-color: rgb(245, 245, 245);
 }
-
 header .logo {
   margin: 0;
   padding: 25px 30px;
@@ -76,70 +70,42 @@ header .logo {
   color: #9D5DC3;
   font-size: 1.6em;
 }
-
 header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   padding-bottom: 25px;
 }
-
 header a {
   padding: 5px 12px;
   text-decoration: none;
   font-weight: bold;
   color: #000;
 }
-
 header a:hover {
   color: #9D5DC3;
 }
 
 #hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 90vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("media/fondo.svg");
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/fondo.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-
 #hero h1 {
   color: white;
 }
-
 #hero button {
   font-size: 1.75em;
 }
@@ -150,24 +116,20 @@ header a:hover {
 }
 
 #caracteristicas {
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
   color: white;
   text-align: center;
 }
-
 #caracteristicas .container {
   padding: 150px 12px;
 }
-
 #caracteristicas h2 {
   margin-top: 0;
   font-size: 3.5em;
 }
-
 #caracteristicas p {
   display: none;
 }
-
 #caracteristicas .carta {
   background-position: center center;
   background-size: cover;
@@ -177,43 +139,29 @@ header a:hover {
 }
 
 .carta:first-child {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("media/importadas.jpg");
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/importadas.jpg");
 }
 
 .carta.carta:nth-child(2) {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("media/precio.jpg");
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/precio.jpg");
 }
 
 .carta.carta:nth-child(3) {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("media/devolucion.jpg");
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/devolucion.jpg");
 }
 
 #compra-ya {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   color: #000;
   height: 80vh;
 }
-
 #compra-ya h2 {
   font-size: 9vw;
 }
-
 #compra-ya button {
   font-size: 5vw;
 }
@@ -221,24 +169,16 @@ header a:hover {
 footer {
   background-color: #1E1E1E;
 }
-
 footer p {
   margin: 0;
-  color: #646464;
+  color: rgb(100, 100, 100);
   padding: 12px;
 }
-
 footer .container {
   height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 @media (min-width: 720px) {
@@ -247,48 +187,31 @@ footer .container {
     width: 100%;
   }
   header .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   header nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding-bottom: 0;
     padding-right: 20px;
   }
+
   #hero h1 {
     font-size: 5em;
   }
+
   #somos-proya .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   #somos-proya .texto {
     width: 50%;
     max-width: 600px;
     text-align: initial;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-left: 30px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
   #somos-proya h2 {
     margin-top: 0;
@@ -300,13 +223,10 @@ footer .container {
     height: 500px;
     width: 400px;
   }
+
   #caracteristicas .programas {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #caracteristicas p {
     display: block;
@@ -318,11 +238,11 @@ footer .container {
   #caracteristicas .carta {
     padding: 15px;
   }
+
   #compra-ya h2 {
     font-size: 5vw;
   }
   #compra-ya button {
     font-size: 3vw;
   }
-}
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
